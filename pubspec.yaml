@@ -1,0 +1,54 @@
+name: recipes_ui_module
+description: A new Flutter module project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.4 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.5
+  sensors_plus: ^2.0.2
+  flutter_riverpod: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+flutter:
+
+  
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/desserts/
+
+  fonts:
+    - family: Rubik
+      fonts:
+        - asset: assets/fonts/Rubik-Regular.ttf
+        - asset: assets/fonts/Rubik-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Rubik-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Rubik-Light.ttf
+          weight: 300
+
+  # This section identifies your Flutter project as a module meant for
+  # embedding in a native host app.  These identifiers should _not_ ordinarily
+  # be changed after generation - they are used to ensure that the tooling can
+  # maintain consistency when adding or modifying assets and plugins.
+  # They also do not have any bearing on your native host application's
+  # identifiers, which may be completely independent or the same as these.
+  module:
+    androidX: true
+    androidPackage: com.criszx17dev.recipes_ui_module
+    iosBundleIdentifier: com.criszx17dev.recipesUiModule
